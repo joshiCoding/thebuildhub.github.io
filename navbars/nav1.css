@@ -89,7 +89,7 @@ header{
     width:100%;
   }
   .menu {
-    visibility:collapse;
+    visibility: collapse;
   }
   .change {
     visibility: visible;
