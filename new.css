@@ -1,0 +1,164 @@
+/* general styling */
+*{
+
+}
+
+:root{
+
+}
+
+.heading{
+  text-transform:capitalize;
+  font-size:2rem;
+  text-decoration:underline;
+}
+
+/* header */
+.header{
+  width:100vw;
+  height:5vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  margin-left:3px;
+  background : grey;
+  width:7vw;
+  max-width:30px;
+  height:30px;
+}
+.navbar{
+}
+.navbar span{
+  background: #2255ff;
+  border-radius:10%;
+  padding:1px;
+}
+
+/* banner */
+.banner{
+  width:100vw;
+  height:95vh;
+}
+/* .namesake{
+  width:100vw;
+  height:20vh;
+  text-transform:uppercase;
+  font-family:
+  font-weight:bold;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:2.5rem;
+  color: blue;
+} */
+.bnr-img{
+  width:100vw;
+  height:95vh;
+  background : url("/images/city.jpg");
+  background-attachment:fixed;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-transform:uppercase;
+  font-weight:bold;
+  color:blue;
+  font-size:2.5rem;
+}
+
+/* content circle */
+
+.cont-circle{
+  width:100vw;
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.circle{
+  width:200px;
+  height:200px;
+  background:grey;
+  border-radius:50%;
+  margin:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* content boxes */
+
+.cont-box{
+  width:100vw;
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  jusitfy-content:center;
+  align-items:center;
+}
+
+.box{
+  width:200px;
+  height:200px;
+  background:grey;
+  border-radius:15%;
+  margin:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+/* footer */
+.footer{
+  width:100vw;
+  height:20vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.links a{
+  text-decoration:none;
+  color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
