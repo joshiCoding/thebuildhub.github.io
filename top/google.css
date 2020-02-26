@@ -1,6 +1,6 @@
 /* imports */
 
-
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 
 
@@ -17,6 +17,7 @@
   padding:0;
   margin:0;
   box-sizing:border-box;
+  font-family: 'Roboto', sans-serif;
 }
 :root{
   --color-border:#dfdfdf;
@@ -189,7 +190,22 @@ footer{
 }
 .foot{
   background:inherit;
+  display:flex;
 }
+/* #f-1{
+  order:2;
+}
+#f-2{
+  order:4;
+}
+#f-3{
+  order:1;
+}
+#f-4{
+  order:3;
+} */
+
+
 .foot a{
   margin:0 20px;
   background:inherit;
@@ -216,6 +232,49 @@ circle{
 fill :black;
 }
 
+/* media queries */
+
+/* for tablets */
+
+@media screen and (max-width : 800px){
+  header{
+    display:none;
+  }
+  section{
+    height: 88vh;
+  }
+}
+@media screen and (max-width:850px){
+  .f-right{
+    display:none;
+  }
+}
+@media screen and (max-width: 640px){
+  .b{
+    display:none;
+  }
+  .c2{
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    height:200px;
+  }
+  .foot a{
+    margin-bottom:5px;
+  }
+  .f-left{
+    order:2;
+    display:flex;
+    flex-direction:column;
+  }
+  .f-right{
+    display:flex;
+    flex-direction:column;
+    order:1;
+  }
+
+
+}
 
 
 
@@ -224,9 +283,4 @@ fill :black;
 
 
 
-
-
-
-
-
-.
+/* the happy end */
