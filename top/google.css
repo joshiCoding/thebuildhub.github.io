@@ -83,7 +83,6 @@ section{
   display:flex;
   margin:5px;
   margin-top:110px;
-  font-weight:bold;
 }
 
 #G{
@@ -159,6 +158,9 @@ section{
 .c{
   margin-bottom:149px;
   font-size:0.9rem;
+}
+.c p a{
+  text-decoration:underline;
 }
 
 /* footer */
@@ -237,9 +239,9 @@ fill :black;
 /* for tablets */
 
 @media screen and (max-width : 800px){
-  header{
+  /* header{
     display:none;
-  }
+  } */
   section{
     height: 88vh;
   }
