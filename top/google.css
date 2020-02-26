@@ -109,7 +109,7 @@ section{
   position:relative;
   margin:5px;
   display:flex;
-  justify-content:flex-end;
+  justify-content:space-between;
   align-items:center;
 }
 .aba{
@@ -196,8 +196,25 @@ footer{
   color: var(--color-hover);
 }
 
-
-
+/* svg styling */
+svg{
+  width:30px;
+  height:30px;
+}
+.search{
+  margin-left:10px;
+  width:20px;
+  height:20px;
+}
+circle{
+  fill:none;
+}
+.button rect{
+  fill:grey;
+}
+.button:hover rect{
+fill :black;
+}
 
 
 
