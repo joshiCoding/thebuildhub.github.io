@@ -155,3 +155,45 @@ const todoComptext = todos.filter(function(td){
   return td.text;
 });
 console.log(todoComptext);
+console.log(document);
+
+//pre-Class OOP
+function Person(firstName,lastName,dob){
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = new Date(dob);
+}
+Person.prototype.getBirthYear = function(){
+  return this.dob.getFullYear();
+}
+Person.prototype.getFullName = function(){
+  return `${this.firstName} ${this.lastName}`;
+}
+
+const person1 = new Person('John','doe','1980-4-3');
+console.log(person1);
+console.log(person1.getFullName());
+console.log(`Hi, my name is ${person1.getFullName()} and i am ${2020 - person1.getBirthYear()} years old`)
+
+//using class
+class Prson{
+  constructor(firstName, lastName, dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+  }
+  getFullName(){
+    return `${this.firstName} ${this.lastName}`;
+  }
+  getBirthYear(){
+    return this.dob.getFullYear();
+  }
+}
+
+const person2 = new Prson('Helen','keller','1998-6-6');
+console.log(`Hi, My name is ${person2.getFullName()} and I am ${2020 - person2.getBirthYear()}.`);
+
+//document objec model
+console.log(window);
+
+//single selector
