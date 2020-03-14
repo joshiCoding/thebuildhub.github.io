@@ -147,13 +147,27 @@ header{
 .banner .arrow{
   /* padding-top:70px; */
   position:absolute;
-  bottom:0px;
-
+  bottom:10px;
+  animation:arrowBounce 1s infinite;
 }
 
 .banner .arrow a{
   color:#384160;
 }
+
+@keyframes arrowBounce{
+  0%{
+    bottom:10px;
+  }
+  50%{
+    bottom:30px;
+  }
+  100%{
+    bottom:10px;
+  }
+}
+
+
 
 /* content */
 section{
