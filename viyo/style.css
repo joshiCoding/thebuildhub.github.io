@@ -119,17 +119,18 @@ header{
   height:100%;
   text-align:center;
   padding:200px 0;
-  border:2px solid red;
-  background:url('/images/computer-desk.jpg');
+  background:url('/images/universe.jpg');
   background-size:cover;
 }
 .banner h1{
   font-size:150px;
-  color:#384160;
+  color:#fff;
+  text-shadow: 5px 5px #384160;
 }
 .banner p{
   padding:25px 50px;
   font-size:5vw;
+  color:#fff;
 }
 .banner .getStarted{
   border:1px solid #384160;
@@ -139,11 +140,12 @@ header{
   font-size:25px;
   text-transform:uppercase;
   font-weight:bold;
+  color:#fff;
 }
 .banner > a{
   padding:10px 0;
   position:relative;
-  color:#384160;
+  color:#fff;
 }
 .banner >a::before{
   content:'';
@@ -160,7 +162,7 @@ header{
 }
 
 .banner .arrow a{
-  color:#384160;
+  color:#fff;
 }
 
 @keyframes arrowBounce{
