@@ -145,7 +145,9 @@ header{
   bottom:4px;
 }
 .banner .arrow{
-  padding-top:70px;
+  /* padding-top:70px; */
+  position:absolute;
+  bottom:0px;
 
 }
 
