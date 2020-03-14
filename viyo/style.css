@@ -130,6 +130,7 @@ header{
   font-size:150px;
   color:#384160;
   text-shadow: 5px 5px #fff;
+  letter-spacing:6px;
 }
 .banner p{
   padding:25px 50px;
@@ -170,7 +171,7 @@ header{
   /* padding-top:70px; */
   position:absolute;
   bottom:10px;
-  animation:arrowBounce 1s infinite;
+  animation:arrowBounce 1.5s infinite;
 }
 
 .banner .arrow a{
@@ -179,13 +180,19 @@ header{
 
 @keyframes arrowBounce{
   0%{
-    bottom:10px;
+    bottom:5px;
   }
-  50%{
+  30%{
     bottom:30px;
   }
+  50%{
+    bottom:5px;
+  }
+  80%{
+    bottom:15px;
+  }
   100%{
-    bottom:10px;
+    bottom:5px;
   }
 }
 
