@@ -18,11 +18,11 @@
 <body>
   <!-- header -->
 <header>
+  <div class ="menu-bar">
+    <div class="menubar"></div>
+  </div>
   <div class="navbar">
     <a href="" class = "logo">viyo</a>
-    <div class ="menu-bar">
-      <div class="menubar"></div>
-    </div>
     <div class="menu menuShow">
       <a href="">Home</a>
       <a href="">About</a>
@@ -194,6 +194,7 @@ As parents and pet-owners ourselves, we take privacy seriously—especially when
   function menuShow(e){
     e.preventDefault();
     console.log(btn);
+
     document.querySelector('.menu').classList.toggle("showMenu");
   }
 <!-- for header visibility -->
