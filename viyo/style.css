@@ -1,0 +1,166 @@
+*, a{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-decoration:none;
+  scroll-behavior:smooth;
+
+}
+
+body{
+  color:#384160;
+  /* padding:10px;   */
+}
+header{
+  width:100vw;
+  height:100vh;
+  border:2px solid red;
+}
+.navbar{
+  padding:10px;
+  height:65px;
+  overflow:hidden;
+  background:linear-gradient(#384160,#232c49);
+  /* background:#232c49; */
+}
+.navbar .logo{
+  font-size:35px;
+  font-weight:bolder;
+  color:white;
+}
+.menu{
+  height:auto;
+  border:1px solid #929292;
+  border-radius:5px;
+  width:90%;
+  margin:auto;
+  margin-bottom:15px;
+  margin-top:15px;
+  padding:10px;
+  background:#384160;
+}
+.menu-bar{
+  float:right;
+  color:#fff;
+}
+.menu a{
+  display:block;
+  padding:5px;
+  color:#a2a2a2;
+}
+.menu-btn{
+  background:#fff;
+  color:#111;
+  padding:5px;
+  width:65%;
+  text-align:center;
+  border-radius:20px;
+  text-transform:uppercase;
+}
+
+.banner{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  height:100%;
+  text-align:center;
+  padding:200px 0;
+}
+.banner h1{
+  font-size:150px;
+  color:#384160;
+}
+.banner p{
+  padding:25px 50px;
+  font-size:5vw;
+}
+.banner .getStarted{
+  border:1px solid #384160;
+  border-radius:50px;
+  width:60%;
+  padding:10px;
+  font-size:25px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+.banner >a{
+  padding:10px 0;
+  position:relative;
+}
+.banner >a::before{
+  content:'';
+  width:100%;
+  border:0.2px solid #384160;
+  position:absolute;
+  bottom:4px;
+}
+.banner .arrow{
+  border:2px solid red;
+  padding:10px;
+}
+
+.banner .arrow a{
+  text-decoration:none;
+  transition:2s all linear;
+}
+
+/* content */
+section{
+  text-align:center;
+}
+
+section > div{
+  padding:70px 22px;
+}
+section > div:nth-child(even){
+  background:#384160;
+  color:#fff;
+}
+section > div:nth-child(odd){
+  color:#384160;
+  background:#fff;
+}
+section >div >h1{
+  font-size:35px;
+  font-weight:bolder;
+  padding:20px 0;
+}
+section >div >h2{
+  font-size:20px;
+  font-weight:bold;
+}
+section div p{
+  padding:10px;
+}
+
+section .diy-img{
+  width:90vw;
+}
+section .phone-img{
+  width:40vw;
+}
+section .number{
+  border:20px solid #384160;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  font-size:120px;
+  font-weight:bolder;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+section div .box p{
+  font-size:20px;
+}
+section div .b3 p{
+  font-size:30px;
+}
+section div .box{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  margin:50px 0;
+}
