@@ -1,9 +1,14 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
 *, a{
   margin:0;
   padding:0;
   box-sizing:border-box;
   text-decoration:none;
   scroll-behavior:smooth;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -17,9 +22,10 @@ header{
 }
 .navbar{
   padding:10px;
-  height:65px;
+  /* height:65px; */
+  height:auto;
   overflow:hidden;
-  background:linear-gradient(#384160,#232c49);
+  background:linear-gradient(#394261,#1e2743);
   /* background:#232c49; */
 }
 .navbar .logo{
@@ -37,6 +43,7 @@ header{
   margin-top:15px;
   padding:10px;
   background:#384160;
+  display:none;
 }
 .menu-bar{
   float:right;
@@ -83,9 +90,10 @@ header{
   text-transform:uppercase;
   font-weight:bold;
 }
-.banner >a{
+.banner > a{
   padding:10px 0;
   position:relative;
+  color:#384160;
 }
 .banner >a::before{
   content:'';
@@ -95,13 +103,12 @@ header{
   bottom:4px;
 }
 .banner .arrow{
-  border:2px solid red;
   padding:10px;
+
 }
 
 .banner .arrow a{
-  text-decoration:none;
-  transition:2s all linear;
+  color:#384160;
 }
 
 /* content */
@@ -208,7 +215,8 @@ section .price{
 }
 section .sign-up{
   margin:0;
-  padding:0;
+  padding:10px;
+  padding-bottom:30px;
 }
 section .sign-up >h1{
   font-size:100px;
@@ -225,4 +233,29 @@ section .sign-up div{
   border-radius:45px;
   margin:0 auto;
   padding:10px;
+}
+footer{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:10px;
+  font-size:15px;
+
+}
+footer > div{
+  padding:10px;
+}
+footer .links a,footer .social a{
+  padding:5px;
+  color:darkgreen;
+}
+footer .creator a{
+  color:darkgreen;
+}
+.icon{
+  font-size:50px;
+  color:#5aada5;
+  padding:15px 5px;
 }
