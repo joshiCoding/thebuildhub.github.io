@@ -187,7 +187,7 @@ As parents and pet-owners ourselves, we take privacy seriously—especially when
 
 
 <script>
-
+<!-- for navigation button -->
   const btn = document.querySelector('.menu-bar');
   btn.addEventListener('click',menuShow);
 
@@ -196,8 +196,9 @@ As parents and pet-owners ourselves, we take privacy seriously—especially when
     console.log(btn);
     document.querySelector('.menu').classList.toggle("showMenu");
   }
-
-
+<!-- for header visibility -->
+  window.onscroll = function() {headerShow()};
+  var head = document.querySelector();
 
 
 </script>
