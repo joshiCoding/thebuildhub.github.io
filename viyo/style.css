@@ -233,7 +233,7 @@ section .diy{
 }
 
 section > .phone{
-  clip-path:circle(95% at 50% 25%);
+  clip-path:circle(100% at 50% 20%);
   position:relative;
   z-index:20;
 }
@@ -244,7 +244,7 @@ section .phone-img{
 section .features{
   padding-top:100px;
   padding-bottom:100px;
-   clip-path:circle(105% at 50% 20%);
+   clip-path:circle(100% at 50% 20%);
   margin-top:-100px;
   position:relative;
   z-index:5;
