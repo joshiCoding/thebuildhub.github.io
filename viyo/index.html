@@ -20,10 +20,10 @@
 <header>
   <div class="navbar">
     <a href="" class = "logo">viyo</a>
-    <div class ="menubar">
-      <!-- <i class="fas fa-bars icon1"></i> -->
+    <div class ="menu-bar">
+      <div class="menubar"></div>
     </div>
-    <div class="menu">
+    <div class="menu menuShow">
       <a href="">Home</a>
       <a href="">About</a>
       <a href="">Features</a>
@@ -188,25 +188,16 @@ As parents and pet-owners ourselves, we take privacy seriously—especially when
 
 <script>
 
-  const btn = document.querySelector('.logo');
-  const menu = document.querySelector('.menu');
+  const btn = document.querySelector('.menu-bar');
+  btn.addEventListener('click',menuShow);
 
   function menuShow(e){
     e.preventDefault();
     console.log(btn);
-    console.log(menu);
-    if(document.querySelector('.menu').style.display === 'block'){
-      document.querySelector('.menu').style.display = 'none';
-      console.log("in block");
-    }
-    if(document.querySelector('.menu').style.display === 'none'){
-      document.querySelector('.menu').style.display = 'block';
-      console.log("in none");
-
-    }
+    document.querySelector('.menu').classList.toggle("showMenu");
   }
 
-  btn.addEventListener('click',menuShow);
+
 
 
 </script>

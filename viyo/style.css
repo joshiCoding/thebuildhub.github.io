@@ -48,16 +48,19 @@ header{
   padding:10px;
   background:#384160;
   display:none;
-
 }
 
-/* .menu-bar{
-  float:right;
-  color:#fff;
+.showMenu{
+  display:block;
+}
+ .menu-bar{
+  width:40px;
+  height:40px;
   position:fixed;
-  top:20px;
-  right:10px;
-} */
+  top:13px;
+  right:14px;
+  background:#384160;
+}
 .icon1{
   font-size:50px;
 }
@@ -67,9 +70,9 @@ header{
   color:#a2a2a2;
 }
 .menubar{
-  width:18px;
-  height:3px;
-  background:green;
+  width:20px;
+  height:4px;
+  background:#fff;
   margin-right:20px;
   position: fixed;
   top:30px;
@@ -78,18 +81,18 @@ header{
 }
 .menubar::before{
   content:'';
-  width:18px;
-  height:3px;
-  background:green;
+  width:20px;
+  height:4px;
+  background:#fff;
   position: absolute;
   top:-7px;
   transition: all 0.1s ease-out;
 }
 .menubar::after{
   content:'';
-  width:18px;
-  height:3px;
-  background:green;
+  width:20px;
+  height:4px;
+  background:#fff;
   position: absolute;
   top:7px;
 }
