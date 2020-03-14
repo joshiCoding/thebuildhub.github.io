@@ -30,6 +30,7 @@ header{
   top:0;
   left:0;
   width:100vw;
+  z-index:99;
   /* display:none; */
 }
 /* .navbar-fixed{
@@ -183,7 +184,7 @@ header{
     bottom:5px;
   }
   30%{
-    bottom:30px;
+    bottom:35px;
   }
   50%{
     bottom:5px;
@@ -211,8 +212,7 @@ section > div:nth-child(even){
   color:#fff;
 }
 section > div:nth-child(odd){
-  color:#384160;
-  background:#fff;
+  color:#384160;   background:#fff;
 }
 section >div >h1{
   font-size:35px;
@@ -225,6 +225,30 @@ section >div >h2{
 }
 section div p{
   padding:10px;
+}
+section .diy{
+  position:relative;
+  z-index:12;
+  padding-bottom:150px;
+}
+
+section > .phone{
+  clip-path:circle(95% at 50% 25%);
+  position:relative;
+  z-index:20;
+}
+section .phone-img{
+  margin-top:-160px;
+}
+
+section .features{
+  padding-top:100px;
+  padding-bottom:100px;
+   clip-path:circle(105% at 50% 20%);
+  margin-top:-100px;
+  position:relative;
+  z-index:5;
+
 }
 
 section .diy-img{
@@ -321,6 +345,8 @@ section .sign-up div{
   margin:0 auto;
   padding:10px;
 }
+
+/* footer */
 footer{
   display:flex;
   flex-direction:column;
