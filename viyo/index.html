@@ -20,7 +20,9 @@
 <header>
   <div class="navbar">
     <a href="" class = "logo">viyo</a>
-    <div class ="menu-bar">menu</div>
+    <div class ="menubar">
+      <!-- <i class="fas fa-bars icon1"></i> -->
+    </div>
     <div class="menu">
       <a href="">Home</a>
       <a href="">About</a>
@@ -36,7 +38,7 @@
     <p>The easiest way to turn a camera-enabled phone, tablet or laptop into a secure home monitoring system.</p>
     <div class="getStarted">get started today</div>
     <a href="" class="test">Test your device for compatibility</a>
-    <div class="arrow"><a href="#content">Arrow here</a></div>
+    <div class="arrow"><a href="#content"><i class="fas fa-arrow-down icon1"></i></a></div>
   </div>
 </header>
 
@@ -185,14 +187,28 @@ As parents and pet-owners ourselves, we take privacy seriously—especially when
 
 
 <script>
-  const btn = document.querySelector('.menu-bar');
-  console.log("hello");
-  console.log(btn);
-  btn.addEventListener('click',menuShow);
+
+  const btn = document.querySelector('.logo');
+  const menu = document.querySelector('.menu');
+
   function menuShow(e){
-    const menu = document.querySelector('.menu');
-    <!-- menu.style.display = 'none'; -->
+    e.preventDefault();
+    console.log(btn);
+    console.log(menu);
+    if(document.querySelector('.menu').style.display === 'block'){
+      document.querySelector('.menu').style.display = 'none';
+      console.log("in block");
+    }
+    if(document.querySelector('.menu').style.display === 'none'){
+      document.querySelector('.menu').style.display = 'block';
+      console.log("in none");
+
+    }
   }
+
+  btn.addEventListener('click',menuShow);
+
+
 </script>
 </body>
 </html>
