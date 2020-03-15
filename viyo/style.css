@@ -116,15 +116,13 @@ header{
   flex-direction:column;
   justify-content:space-around;
   align-items:center;
-  width:100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
   text-align:center;
   padding:200px 0;
   background:url('/images/computer-desk.jpg');
   background-size:cover;
   background-attachment:fixed;
-
-
 
 }
 .banner h1{
@@ -214,7 +212,7 @@ section > div:nth-child(even){
 section > div:nth-child(odd){
   color:#384160;   background:#fff;
 }
-section >div >h1{
+section >div >h1,.diy div h1,.phone div h1{
   font-size:35px;
   font-weight:bolder;
   padding:20px 0;
@@ -223,7 +221,7 @@ section >div >h2{
   font-size:20px;
   font-weight:bold;
 }
-section div p{
+section div p,.diy div p,.phone div p{
   padding:10px;
 }
 section .diy{
@@ -301,8 +299,15 @@ section div .box{
   width:200px;
   border-radius:50px;
   margin:0 auto;
+  font-weight:bold;
 }
-
+.comp-test-btn:hover{
+  color:#fff;
+  background:#384160;
+}
+section >.pricing> h1{
+  font-size:45px;
+}
 section .price{
   margin:10px;
   padding:20px 0;
@@ -345,6 +350,11 @@ section .sign-up div{
   margin:0 auto;
   padding:10px;
 }
+section .sign-up .sign-up-btn:hover{
+  color:#fff;
+  background:#384160;
+  box-shadow: 0.1px 0.1px 5px #fff;
+}
 
 /* footer */
 footer{
@@ -354,7 +364,7 @@ footer{
   align-items:center;
   text-align:center;
   padding:10px;
-  font-size:15px;
+  font-size:17px;
 
 }
 footer > div{
@@ -364,6 +374,10 @@ footer .links a,footer .social a{
   padding:5px;
   color:darkgreen;
 }
+footer .links a:hover{
+  color:#384160;
+  text-decoration:underline;
+}
 footer .creator a{
   color:darkgreen;
 }
@@ -371,4 +385,84 @@ footer .creator a{
   font-size:50px;
   color:#5aada5;
   padding:15px 5px;
+}
+.icon-social{
+  font-size:30px;
+  margin:10px;
+}
+
+/* responsive design */
+@media screen and (min-width : 600px){
+
+  .steps .box{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+  }
+  .steps .box p{
+    padding:30px;
+    width:50vw;
+  }
+  .steps .b3 p{
+    font-size:50px;
+  }
+}
+
+@media screen and (min-width : 700px){
+  section .diy-img{
+    width:600px;
+  }
+  section .phone-img{
+    width:200px;
+  }
+  #comp-test{
+    width:600px;
+    height:300px;
+  }
+  #comp-test h1{
+    font-size:40px;
+  }
+  #comp-test p{
+    font-size:20px;
+    padding:20px;
+  }
+  #comp-test .comp-test-btn{
+    font-size:20px;
+  }
+}
+@media screen and (min-width:800px){
+  .pricing .price-box{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width : 1000px){
+  .diy{
+    display:flex;
+    flex-direction:row;
+  }
+  .phone{
+  display:flex;
+  flex-direction: row-reverse;
+  }
+  section .diy-img{
+    width:900px;
+  }
+  section .phone-img{
+    margin-top:0px;
+    padding:10px;
+    width:600px;
+  }
+  .steps .box{
+    justify-content:left;
+    padding-left:50px;
+  }
+  .steps .b2{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:right;
+    padding-right:50px;
+
+  }
 }
