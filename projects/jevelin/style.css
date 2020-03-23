@@ -10,11 +10,8 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 header{
-  height:70vh;
-  min-height:300px;
+  height:500px;
   width:100vw;
-}
-header .nav{
   background: #BFD1F3;
 }
 header .nav-bar{
@@ -106,7 +103,7 @@ section .features{
   width:60vw;
   height:auto;
   margin:0 auto;
-  margin-top:-30%;
+  margin-top:-100px;
   background:#FBF8F8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -121,7 +118,6 @@ section .feature-box .icon{
   width:45px;
   height:45px;
   border-radius:50%;
-  margin-top:-30%;
 }
 section .feat-cont{
   margin:20px;
@@ -410,15 +406,12 @@ section .header-layout{
   font-size:14px;
   font-weight:bolder;
 }
-.header-layout .header-layout-carousel{
-  width: 360px;
-  height: 201px;
-  margin:0 auto;
-  border-radius:5px;
-  background: #92A9E2;
-}
+
 .header-layout .h-layout-box-container{
-  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
 .header-layout .h-layout-box{
@@ -427,10 +420,74 @@ section .header-layout{
   height:250px;
   margin:50px;
   border-radius:5px;
-
 }
 
+/* reviews */
+section .review{
+  text-align:center;
+  margin-top:30px;
+  padding:10%;
+}
 
+.review .h2{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  padding:10%;
+}
+.review p{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  margin:5% 0;
+}
+
+.review .review-container{
+  text-align:left;
+}
+.review .review-box{
+  background:#92A9E2;
+  padding:10px;
+  margin:5px;
+  border-radius:10px;
+}
+
+/* ques */
+section .ques{
+  text-align:center;
+  margin-top:30px;
+  padding:10%;
+}
+
+.ques .h2{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  padding:10%;
+}
+.ques p{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  margin:5% 0;
+}
+
+.ques .ques-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.ques-container .ques-box .ques{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  background:#558DF9;
+  border-radius:10px;
+  height:auto;
+  width:400px;
+}
 
 
 footer{
