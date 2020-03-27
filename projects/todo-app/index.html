@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SAVE THE DAY</h1>
-    <h3>before it starts</h3>
+    <h1 class ="heading">SAVE THE DAY</h1>
+    <h3 class = "subheading">before it starts</h3>
 
     <section>
         <div class="all-tasks">
             <h2>Things to do :</h2>
             <ul class="list">
                 <li class="active-item list-item">Youtube</li>
-                <li class="active-item list-item">Instagram</li>
-                <li class="active-item list-item">Linkedin</li>
-                <li class="active-item list-item">make a hell of good day</li>
+                <li class="list-item">Instagram</li>
+                <li class=" list-item">Linkedin</li>
+                <li class="list-item" >make a hell of good day</li>
             </ul>
             <form action="">
-                <input type="text" class="new " placeholder = "New List Name" aria-label="new list name"/>
+                <input type="text" class="add-new-list" placeholder = "New List Name" aria-label="new list name"/>
                 <button class="btn create" aria-label="create new list">+</button>
             </form>
         </div>
@@ -61,17 +61,20 @@
                         </label>
                     </div>
                 </div>
-            </div>
-            <div class="new-task-creator">
-                <form action="">
-                    <input type="text" class ="new task" placeholder="new task name" aria-label ="create new task">
-                </form>
-            </div>
-            <div class="delete-stuff">
-                <button class="btn delete">Clear completed task</button>
-                <button class="btn delete">Delete list
-                </button>
-            </div>
+           
+                <div class="new-task-creator">
+                    <form action="">
+                        <input type="text" class ="new-task" placeholder="new task name" aria-label ="create new task">
+                   
+                     <button class="btn create" aria-label="create new task">+</button>
+                    </form>
+                 </div>
+                <div class="delete-stuff">
+                     <button class="btn-delete">Clear completed task</button>
+                     <button class="btn-delete">Delete list
+                     </button>
+                </div>
+             </div>
         </div>
     </section>
 </body>
