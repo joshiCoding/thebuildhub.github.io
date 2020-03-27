@@ -1,0 +1,32 @@
+$clr-prim:rgb(54,112,199);
+$clr-light:#f4f4f4;
+$clr-dark:#333;
+$clr-warning:rgb(99,36,36);
+
+*,
+*::before,
+*::after{
+    font-family:inherit;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:"Work Sans",Arial, Helvetica, sans-serif;
+    font-weight:300;
+    font-size:1rem;
+    background-color:$clr-prim;
+    color:$clr-light;
+
+}
+section{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    .all-tasks{
+        text-align:left;
+        border:2px solid red;
+        width:70vw;
+    }
+}

@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans",Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  background-color: #3670c7;
+  color: #f4f4f4;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .all-tasks {
+  text-align: left;
+  border: 2px solid red;
+  width: 70vw;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SAVE THE DAY</h1>
+    <h3>before it starts</h3>
+
+    <section>
+        <div class="all-tasks">
+            <h2>Things to do :</h2>
+            <ul class="list">
+                <li class="active-item list-item">Youtube</li>
+                <li class="active-item list-item">Instagram</li>
+                <li class="active-item list-item">Linkedin</li>
+                <li class="active-item list-item">make a hell of good day</li>
+            </ul>
+            <form action="">
+                <input type="text" class="new " placeholder = "New List Name" aria-label="new list name"/>
+                <button class="btn create" aria-label="create new list">+</button>
+            </form>
+        </div>
+
+        <div class="todo-list">
+            <div class="todo-header">
+                <h2 class="title">Youtube</h2>
+                <p class="task-count">3 tasks remaining</p>
+            </div>
+            <div class="todo-body">
+                <div class="tasks">
+                    <div class="task">
+                        <input type="checkbox" id ="task-1">
+                        <label for="task-1">
+                            <span class="custom-checkbox"></span>
+                            do the youtube video
+                        </label>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox" id ="task-2">
+                        <label for="task-2">
+                            <span class="custom-checkbox"></span>
+                            complete the project
+                        </label>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox" id ="task-3">
+                        <label for="task-3">
+                            <span class="custom-checkbox"></span>
+                           learn the jquery 
+                        </label>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox" id ="task-4">
+                        <label for="task-4">
+                            <span class="custom-checkbox"></span>
+                            write the query
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="new-task-creator">
+                <form action="">
+                    <input type="text" class ="new task" placeholder="new task name" aria-label ="create new task">
+                </form>
+            </div>
+            <div class="delete-stuff">
+                <button class="btn delete">Clear completed task</button>
+                <button class="btn delete">Delete list
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
