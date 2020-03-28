@@ -22,26 +22,9 @@ a {
 
 body {
   font-family: "Work Sans",Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
   background-color: #3670c7;
   color: #B2CBF0;
   text-align: center;
-  width: 100vw;
-  height: auto;
-}
-
-body .heading {
-  font-size: calc(7vw + 2rem);
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.1);
-  margin: -0.3em;
-}
-
-body .subheading {
-  color: rgba(0, 0, 0, 0.3);
-  letter-spacing: 3px;
-  padding: 10px;
 }
 
 section {
@@ -58,6 +41,22 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
+  padding: 0;
+  padding-top: 0;
+}
+
+section .heading {
+  font-size: calc(7vw + 2rem);
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.1);
+  margin-top: -30%;
+}
+
+section .subheading {
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+  padding: 10px;
 }
 
 .all-tasks {
@@ -508,7 +507,6 @@ section {
   width: 90vw;
   height: auto;
   margin: 0 auto;
-  margin-top: 100px;
   line-height: 1.5rem;
   text-align: left;
   border-top: 2px solid #B2CBF0;
