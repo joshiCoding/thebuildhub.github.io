@@ -412,41 +412,46 @@ section {
   color: #A64646;
 }
 
-.help {
+.help, .complaint {
   width: 90vw;
   height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
   line-height: 1.5rem;
   text-align: left;
   border-top: 2px solid #B2CBF0;
   border-bottom: 2px solid #B2CBF0;
 }
 
-.help ol {
+.help ol, .complaint ol {
   padding: 1rem;
 }
 
-.help h1 {
+.help h1, .complaint h1 {
   padding: 1rem;
 }
 
-.help p {
+.help p, .complaint p {
   padding: 1rem;
 }
 
-.help .note {
+.help .note, .complaint .note {
   font-weight: 700;
   letter-spacing: 1px;
   border: 2px solid #333;
 }
 
-.help .note span {
+.help .note span, .complaint .note span {
   background: #A64646;
   padding: 2px;
   color: #B2CBF0;
 }
 
 .complaint {
-  text-align: left;
-  padding: 1rem;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding-top: 0;
+  line-height: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
