@@ -55,7 +55,7 @@ section .head {
 }
 
 section .head .heading {
-  font-size: calc(7vw + 2rem);
+  font-size: calc(5vw + 2rem);
   font-weight: 900;
   color: rgba(0, 0, 0, 0.1);
 }
@@ -548,6 +548,19 @@ section .head .subheading {
 .help #lazy, .complaint #lazy {
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.help #gif-div, .complaint #gif-div {
+  border: 5px solid black;
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.help #gif-div #gif, .complaint #gif-div #gif {
+  width: 100%;
 }
 
 .complaint {

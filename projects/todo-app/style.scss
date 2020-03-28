@@ -85,7 +85,7 @@ section{
         position:absolute;
         top:0;
         .heading{
-            font-size:calc(7vw + 2rem);
+            font-size:calc(5vw + 2rem);
             font-weight:900;
             color:rgba(0,0,0,0.1);
     
@@ -403,9 +403,24 @@ section{
     #lazy{
         font-weight:700;
         font-size:1.2rem;
+       
     }
+    #gif-div{
+        border:5px solid black;
+        width:80vw;
+        height:auto;
+        margin:0 auto;
+        border-radius:50px;
+        overflow:hidden;
+    
+        #gif{
+         width:100%;
+        }
+    }
+   
 
 }
+
 .complaint{
     @extend .help;
     border:none;
