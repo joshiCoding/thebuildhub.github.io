@@ -55,7 +55,7 @@ section .head {
 }
 
 section .head .heading {
-  font-size: calc(5vw + 2rem);
+  font-size: calc(7vw + 2rem);
   font-weight: 900;
   color: rgba(0, 0, 0, 0.1);
 }
@@ -557,6 +557,7 @@ section .head .subheading {
   margin: 0 auto;
   border-radius: 50px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .help #gif-div #gif, .complaint #gif-div #gif {
