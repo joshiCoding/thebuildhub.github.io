@@ -76,27 +76,36 @@ section{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:100vh;
+    min-height:100vh;
+    height:auto;
     padding:0;
     padding-top:0;
-    .heading{
-        font-size:calc(7vw + 2rem);
-        font-weight:900;
-        color:rgba(0,0,0,0.1);
-        margin-top:-30%;
+    position:relative;
+    .head{
+        position:absolute;
+        top:-3%;
+        .heading{
+            font-size:calc(7vw + 2rem);
+            font-weight:900;
+            color:rgba(0,0,0,0.1);
+    
+        }
+        .subheading{
+            color:rgba(0,0,0,0.3);
+            letter-spacing:3px;
+            padding:10px;
+        }
+    }
+   
+    padding-bottom:70px;
 
-    }
-    .subheading{
-        color:rgba(0,0,0,0.3);
-        letter-spacing:3px;
-        padding:10px;
-    }
    
 }
 .all-tasks{
     text-align:left;
     width:80vw;
     margin:50px;
+    margin-top:200px;
 
     .list{
         font-size:1.2rem;
