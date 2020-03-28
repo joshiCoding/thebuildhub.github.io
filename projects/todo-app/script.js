@@ -172,7 +172,7 @@ render();
 
 //for info button
 const infoBtn = document.querySelector('.info-btn');
-const infoContent = infoBtn.querySelector('.info-content');
+const infoContent = document.querySelector('.info-content');
 console.log(infoContent);
 console.log(infoContent.style.display);
 infoContent.style.display = 'none'

@@ -9,6 +9,17 @@
   padding: 0;
 }
 
+i {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #181bbe;
+}
+
+a {
+  color: #181bbe;
+  text-decoration: none;
+}
+
 body {
   font-family: "Work Sans",Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -110,6 +121,22 @@ section {
   opacity: 0.2;
 }
 
+.all-tasks form .add-new-list::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.all-tasks form .add-new-list:-ms-input-placeholder {
+  color: inherit;
+}
+
+.all-tasks form .add-new-list::-ms-input-placeholder {
+  color: inherit;
+}
+
+.all-tasks form .add-new-list::placeholder {
+  color: inherit;
+}
+
 .all-tasks form .btn {
   cursor: pointer;
   background: 0;
@@ -130,7 +157,7 @@ section {
 .todo-list {
   text-align: left;
   background: #3670c7;
-  color: #333;
+  color: #B2CBF0;
   width: 80vw;
   height: auto;
   position: relative;
@@ -282,6 +309,22 @@ section {
   opacity: 0.2;
 }
 
+.todo-list .todo-body .new-task-creator .new-task::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.todo-list .todo-body .new-task-creator .new-task:-ms-input-placeholder {
+  color: inherit;
+}
+
+.todo-list .todo-body .new-task-creator .new-task::-ms-input-placeholder {
+  color: inherit;
+}
+
+.todo-list .todo-body .new-task-creator .new-task::placeholder {
+  color: inherit;
+}
+
 .todo-list .todo-body .new-task-creator .btn {
   cursor: pointer;
   background: 0;
@@ -340,16 +383,17 @@ section {
 
 .info-btn {
   cursor: pointer;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   background: #B2CBF0;
   color: #333;
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 20px;
+  margin: 30px;
+  margin-bottom: 40px;
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 900;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,6 +407,7 @@ section {
   text-align: center;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  z-index: 100;
 }
 
 .info-btn:hover {
@@ -370,28 +415,30 @@ section {
           box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
 }
 
-.info-btn .info-content {
+.info-content {
   overflow: auto;
   display: none;
   position: fixed;
   top: 10vh;
-  right: 12.5vw;
-  width: 75vw;
+  right: 5vw;
+  width: 90vw;
   height: 80vh;
   -webkit-box-shadow: 7px 7px 20px rgba(2, 2, 2, 0.44);
           box-shadow: 7px 7px 20px rgba(2, 2, 2, 0.44);
-}
-
-.info-btn .info-content .inner-content {
+  z-index: 50;
   overflow-x: scroll;
   background: #B2CBF0;
+  color: #333;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-radius: 10px;
 }
 
-.info-btn .info-content .inner-content h1 {
+.info-content h1 {
   font-size: 2rem;
 }
 
-.info-btn .info-content .inner-content h3 {
+.info-content h3 {
   font-size: 1.5rem;
   text-align: left;
   font-weight: 700;
@@ -399,7 +446,7 @@ section {
   margin: 0;
 }
 
-.info-btn .info-content .inner-content p {
+.info-content p {
   font-size: 1rem;
   font-weight: 500;
   padding: 20px 20px;
@@ -407,9 +454,18 @@ section {
   margin: 0;
 }
 
-.info-btn .info-content .inner-content p span {
+.info-content p span {
   padding: 2px;
   color: #A64646;
+}
+
+.info-content p i, .info-content p a {
+  color: #2A589D;
+}
+
+.info-content p .social {
+  display: block;
+  text-align: center;
 }
 
 .help, .complaint {
@@ -445,6 +501,11 @@ section {
   background: #A64646;
   padding: 2px;
   color: #B2CBF0;
+}
+
+.help #lazy, .complaint #lazy {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .complaint {
