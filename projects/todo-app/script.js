@@ -114,7 +114,6 @@ function render(){
 
 
     const selectedList = lists.find(list => list.id === selectedListId);
-    console.log(selectedList);
     if(selectedList == null){
         listDisplayContainer.style.display = 'none';
     }
@@ -125,7 +124,6 @@ function render(){
         clearElement(taskContainer);
        
         renderTasks(selectedList);  
-        console.log("i am after render task");
     } 
 }
 
@@ -173,15 +171,13 @@ render();
 //for info button
 const infoBtn = document.querySelector('.info-btn');
 const infoContent = document.querySelector('.info-content');
-console.log(infoContent);
-console.log(infoContent.style.display);
-infoContent.style.display = 'none'
+const infoHideBtn = document.querySelector('.info-hide-btn');
 
 infoBtn.addEventListener('click',e =>{
-    if(infoContent.style.display === 'none')
     infoContent.style.display = 'block';
-    else{
+    infoHideBtn.style.display = 'block'; 
+});
+infoHideBtn.addEventListener('click',e =>{
     infoContent.style.display = 'none';
-        
-    }
+    infoHideBtn.style.display = 'none';
 });

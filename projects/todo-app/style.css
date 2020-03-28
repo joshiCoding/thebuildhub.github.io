@@ -392,6 +392,7 @@ section {
   right: 0;
   margin: 30px;
   margin-bottom: 40px;
+  border: 2px solid #2A589D;
   border-radius: 50%;
   font-size: 3rem;
   font-weight: 900;
@@ -405,14 +406,18 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
   z-index: 100;
 }
 
 .info-btn:hover {
-  -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+.info-hide-btn {
+  display: none;
 }
 
 .info-content {
@@ -420,15 +425,16 @@ section {
   display: none;
   position: fixed;
   top: 10vh;
-  right: 5vw;
-  width: 90vw;
+  right: 2.5vw;
+  left: 2.5vw;
+  width: 95vw;
   height: 80vh;
   -webkit-box-shadow: 7px 7px 20px rgba(2, 2, 2, 0.44);
           box-shadow: 7px 7px 20px rgba(2, 2, 2, 0.44);
   z-index: 50;
   overflow-x: scroll;
   background: #B2CBF0;
-  color: #333;
+  color: #2A589D;
   padding-bottom: 30px;
   padding-top: 30px;
   border-radius: 10px;
@@ -459,8 +465,21 @@ section {
   color: #A64646;
 }
 
-.info-content p i, .info-content p a {
+.info-content p a {
+  text-decoration: underline;
   color: #2A589D;
+}
+
+.info-content p a:hover {
+  color: #181bbe;
+}
+
+.info-content p a i {
+  color: inherit;
+}
+
+.info-content p a i:hover {
+  color: #181bbe;
 }
 
 .info-content p .social {
