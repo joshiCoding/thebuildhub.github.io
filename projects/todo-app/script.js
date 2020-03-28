@@ -170,4 +170,18 @@ function clearElement(element){
 
 render();
 
+//for info button
+const infoBtn = document.querySelector('.info-btn');
+const infoContent = infoBtn.querySelector('.info-content');
+console.log(infoContent);
+console.log(infoContent.style.display);
+infoContent.style.display = 'none'
 
+infoBtn.addEventListener('click',e =>{
+    if(infoContent.style.display === 'none')
+    infoContent.style.display = 'block';
+    else{
+    infoContent.style.display = 'none';
+        
+    }
+});

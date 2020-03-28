@@ -1,13 +1,18 @@
 $clr-prim:rgb(54,112,199);
-$clr-light:#f4f4f4;
+// $clr-light:#f4f4f4;
+$clr-light:#B2CBF0;
 $clr-dark:#333;
 $clr-warning:rgb(99,36,36);
+$clr-note:#A64646;
 
 *,
 *::before,
 *::after{
     font-family:inherit;
     box-sizing:border-box;
+    outline:0;
+    margin:0;
+    padding:0;
 }
 @mixin add-new{
     background:transparent;
@@ -23,6 +28,7 @@ $clr-warning:rgb(99,36,36);
     &:focus::placeholder{
         opacity:0.2;
     }
+
 }
 @mixin btn{
     cursor:pointer;
@@ -30,35 +36,35 @@ $clr-warning:rgb(99,36,36);
     border:0;
     padding:0;
     color:inherit;
-    font-size:1.5rem;
+    font-size:2.5rem;
     font-weight:900;
     transition:opacity 150ms ease-in;
     &:hover{
         opacity:0.7;
     }
-    order:1;
     margin-bottom:10px;
 }
 
 body{
-    margin:0;
     font-family:"Work Sans",Arial, Helvetica, sans-serif;
     font-weight:300;
     font-size:1rem;
     background-color:$clr-prim;
     color:$clr-light;
     text-align:center;
-    padding-top:0;
+    width:100vw;
+    height:auto;
     .heading{
         font-size:calc(7vw + 2rem);
         font-weight:900;
         color:rgba(0,0,0,0.1);
-        margin-top:0;
-        padding-top:0;
+        margin:-0.3em;
+
     }
     .subheading{
         color:rgba(0,0,0,0.3);
         letter-spacing:3px;
+        padding:10px;
     }
 
 }
@@ -71,7 +77,8 @@ section{
 }
 .all-tasks{
     text-align:left;
-    width:70vw;
+    width:80vw;
+    margin:50px;
     .list{
         font-size:1.2rem;
         list-style:circle;
@@ -88,7 +95,7 @@ section{
         }
     }
     form{
-        display:flex;
+        color:$clr-light;
         .add-new-list{
           @include add-new;
         }
@@ -105,12 +112,18 @@ section{
 .todo-list{
     $spacer:1rem;
     text-align:left;
-    background:$clr-light;
+    background:$clr-prim;
     color:$clr-dark;
-    margin-top:30px;
-    border-radius:10px;
+    width:80vw;    
+    height:auto;
+    position:relative;
+    box-shadow: 4px 4px 5px rgba(2, 2, 2, 0.44), -4px -4px 5px rgba(203, 200, 200, 0.44);
+    border-radius:20px;
+
     .todo-header{
-        background:#e4e4e4;
+        width:100%;
+        height:auto;
+        background:#2A589D;
         padding:$spacer;
         display:flex;
         justify-content:space-between;
@@ -119,21 +132,26 @@ section{
         border-top-right-radius:inherit;
         .title{
             margin:0 1em 0 0;
+            width:50%;
+            height:auto;
         }
         .task-count{
             margin:0;
             font-size:1rem;
+            width:45%;
+            height:auto;
+            text-align:right;
+
         }
     }
     .todo-body{
 
         padding:2*$spacer;
         padding-left:-$spacer;
-        position:relative;
-        width:80vw;
+     
        
         .tasks{
-           
+          
             .task{
                 display:flex;
                 align-items:center;
@@ -214,12 +232,13 @@ section{
             position:absolute;
             width:100%;
             left:0;
-            bottom:-20%;
+            bottom:-50px;
             .btn-delete{
                 @include btn;
                 color:$clr-light;
                 opacity:0.7;
                 font-size:1rem;
+                padding-right:2rem;
                 transition:color 200ms;
                 &:hover{
                     color:$clr-warning;
@@ -227,4 +246,115 @@ section{
             }
         }
     }
+}
+
+.info-btn{
+    $size:3rem;
+    cursor:pointer;
+    width: $size;
+    height: $size;
+    background:$clr-light;
+    color:$clr-dark;
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin:20px;
+    border-radius:50%;
+    font-size:$size - 1rem;
+    font-weight:900;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    &:hover{
+        box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+    }
+    .info-content{
+        overflow:auto;
+        display:none;
+        $box-height:80vh;
+        $box-width:75vw;
+        position:fixed;
+        top:(100vh-$box-height)/2;
+        right:(100vw-$box-width)/2;
+        width:$box-width;
+        height:$box-height;
+        box-shadow: 7px 7px 20px rgba(2, 2, 2, 0.44);
+
+      
+
+      
+        .inner-content{
+            overflow-x:scroll;
+            background:$clr-light; 
+
+
+           
+            h1{
+                font-size:2rem;
+            }
+            h3{
+                font-size:1.5rem;
+                text-align:left;
+                font-weight:700;
+                padding:20px;
+                margin:0;
+            }
+            p{
+                font-size:1rem;
+                font-weight:500;
+                padding:20px 20px;
+                text-align:left;
+                margin:0;
+                span{
+                        
+                        padding:2px;
+                        color:$clr-note;
+                 }
+
+            }
+
+        }
+    }
+
+}
+.help{
+    width:90vw;
+    height:auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    line-height:1.5rem;
+    text-align:left;
+
+
+    border-top:2px solid $clr-light;
+    border-bottom:2px solid $clr-light;
+    ol{
+        padding:1rem;
+    }
+    h1{
+        padding:1rem;
+    }
+    p{
+        padding:1rem;
+    }
+    .note{
+        font-weight:700;
+        letter-spacing:1px;
+        border:2px solid $clr-dark;
+        span{
+            background:$clr-note;
+            padding:2px;
+            color:$clr-light;
+        }
+    }
+
+}
+.complaint{
+    text-align:left;
+    padding:
 }

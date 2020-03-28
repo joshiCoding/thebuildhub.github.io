@@ -4,30 +4,33 @@
   font-family: inherit;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: "Work Sans",Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 1rem;
   background-color: #3670c7;
-  color: #f4f4f4;
+  color: #B2CBF0;
   text-align: center;
-  padding-top: 0;
+  width: 100vw;
+  height: auto;
 }
 
 body .heading {
   font-size: calc(7vw + 2rem);
   font-weight: 900;
   color: rgba(0, 0, 0, 0.1);
-  margin-top: 0;
-  padding-top: 0;
+  margin: -0.3em;
 }
 
 body .subheading {
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 3px;
+  padding: 10px;
 }
 
 section {
@@ -48,7 +51,8 @@ section {
 
 .all-tasks {
   text-align: left;
-  width: 70vw;
+  width: 80vw;
+  margin: 50px;
 }
 
 .all-tasks .list {
@@ -71,9 +75,7 @@ section {
 }
 
 .all-tasks form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #B2CBF0;
 }
 
 .all-tasks form .add-new-list {
@@ -114,13 +116,10 @@ section {
   border: 0;
   padding: 0;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   -webkit-transition: opacity 150ms ease-in;
   transition: opacity 150ms ease-in;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   margin-bottom: 10px;
 }
 
@@ -130,14 +129,20 @@ section {
 
 .todo-list {
   text-align: left;
-  background: #f4f4f4;
+  background: #3670c7;
   color: #333;
-  margin-top: 30px;
-  border-radius: 10px;
+  width: 80vw;
+  height: auto;
+  position: relative;
+  -webkit-box-shadow: 4px 4px 5px rgba(2, 2, 2, 0.44), -4px -4px 5px rgba(203, 200, 200, 0.44);
+          box-shadow: 4px 4px 5px rgba(2, 2, 2, 0.44), -4px -4px 5px rgba(203, 200, 200, 0.44);
+  border-radius: 20px;
 }
 
 .todo-list .todo-header {
-  background: #e4e4e4;
+  width: 100%;
+  height: auto;
+  background: #2A589D;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,18 +159,21 @@ section {
 
 .todo-list .todo-header .title {
   margin: 0 1em 0 0;
+  width: 50%;
+  height: auto;
 }
 
 .todo-list .todo-header .task-count {
   margin: 0;
   font-size: 1rem;
+  width: 45%;
+  height: auto;
+  text-align: right;
 }
 
 .todo-list .todo-body {
   padding: 2rem;
   padding-left: -1rem;
-  position: relative;
-  width: 80vw;
 }
 
 .todo-list .todo-body .tasks .task {
@@ -280,13 +288,10 @@ section {
   border: 0;
   padding: 0;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   -webkit-transition: opacity 150ms ease-in;
   transition: opacity 150ms ease-in;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   margin-bottom: 10px;
 }
 
@@ -303,7 +308,7 @@ section {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: -20%;
+  bottom: -50px;
 }
 
 .todo-list .todo-body .delete-stuff .btn-delete {
@@ -312,17 +317,15 @@ section {
   border: 0;
   padding: 0;
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   -webkit-transition: opacity 150ms ease-in;
   transition: opacity 150ms ease-in;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   margin-bottom: 10px;
-  color: #f4f4f4;
+  color: #B2CBF0;
   opacity: 0.7;
   font-size: 1rem;
+  padding-right: 2rem;
   -webkit-transition: color 200ms;
   transition: color 200ms;
 }
@@ -333,5 +336,117 @@ section {
 
 .todo-list .todo-body .delete-stuff .btn-delete:hover {
   color: #632424;
+}
+
+.info-btn {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  background: #B2CBF0;
+  color: #333;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.info-btn:hover {
+  -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.4);
+}
+
+.info-btn .info-content {
+  overflow: auto;
+  display: none;
+  position: fixed;
+  top: 10vh;
+  right: 12.5vw;
+  width: 75vw;
+  height: 80vh;
+  -webkit-box-shadow: 7px 7px 20px rgba(2, 2, 2, 0.44);
+          box-shadow: 7px 7px 20px rgba(2, 2, 2, 0.44);
+}
+
+.info-btn .info-content .inner-content {
+  overflow-x: scroll;
+  background: #B2CBF0;
+}
+
+.info-btn .info-content .inner-content h1 {
+  font-size: 2rem;
+}
+
+.info-btn .info-content .inner-content h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  padding: 20px;
+  margin: 0;
+}
+
+.info-btn .info-content .inner-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 20px 20px;
+  text-align: left;
+  margin: 0;
+}
+
+.info-btn .info-content .inner-content p span {
+  padding: 2px;
+  color: #A64646;
+}
+
+.help {
+  width: 90vw;
+  height: auto;
+  line-height: 1.5rem;
+  text-align: left;
+  border-top: 2px solid #B2CBF0;
+  border-bottom: 2px solid #B2CBF0;
+}
+
+.help ol {
+  padding: 1rem;
+}
+
+.help h1 {
+  padding: 1rem;
+}
+
+.help p {
+  padding: 1rem;
+}
+
+.help .note {
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 2px solid #333;
+}
+
+.help .note span {
+  background: #A64646;
+  padding: 2px;
+  color: #B2CBF0;
+}
+
+.complaint {
+  text-align: left;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
