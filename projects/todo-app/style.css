@@ -123,18 +123,22 @@ section {
 
 .all-tasks form .add-new-list::-webkit-input-placeholder {
   color: inherit;
+  opacity: 0.5;
 }
 
 .all-tasks form .add-new-list:-ms-input-placeholder {
   color: inherit;
+  opacity: 0.5;
 }
 
 .all-tasks form .add-new-list::-ms-input-placeholder {
   color: inherit;
+  opacity: 0.5;
 }
 
 .all-tasks form .add-new-list::placeholder {
   color: inherit;
+  opacity: 0.5;
 }
 
 .all-tasks form .btn {
@@ -161,9 +165,14 @@ section {
   width: 80vw;
   height: auto;
   position: relative;
-  -webkit-box-shadow: 4px 4px 5px rgba(2, 2, 2, 0.44), -4px -4px 5px rgba(203, 200, 200, 0.44);
-          box-shadow: 4px 4px 5px rgba(2, 2, 2, 0.44), -4px -4px 5px rgba(203, 200, 200, 0.44);
+  -webkit-box-shadow: 2px 2px 5px rgba(2, 2, 2, 0.44), -2px -2px 5px rgba(203, 200, 200, 0.44);
+          box-shadow: 2px 2px 5px rgba(2, 2, 2, 0.44), -2px -2px 5px rgba(203, 200, 200, 0.44);
   border-radius: 20px;
+}
+
+.todo-list:hover {
+  -webkit-box-shadow: 4px 4px 8px rgba(2, 2, 2, 0.44), -4px -4px 8px rgba(203, 200, 200, 0.44);
+          box-shadow: 4px 4px 8px rgba(2, 2, 2, 0.44), -4px -4px 8px rgba(203, 200, 200, 0.44);
 }
 
 .todo-list .todo-header {
@@ -311,18 +320,22 @@ section {
 
 .todo-list .todo-body .new-task-creator .new-task::-webkit-input-placeholder {
   color: inherit;
+  opacity: 0.5;
 }
 
 .todo-list .todo-body .new-task-creator .new-task:-ms-input-placeholder {
   color: inherit;
+  opacity: 0.5;
 }
 
 .todo-list .todo-body .new-task-creator .new-task::-ms-input-placeholder {
   color: inherit;
+  opacity: 0.5;
 }
 
 .todo-list .todo-body .new-task-creator .new-task::placeholder {
   color: inherit;
+  opacity: 0.5;
 }
 
 .todo-list .todo-body .new-task-creator .btn {
@@ -409,6 +422,8 @@ section {
   -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
   z-index: 100;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .info-btn:hover {
@@ -418,6 +433,8 @@ section {
 
 .info-hide-btn {
   display: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .info-content {
