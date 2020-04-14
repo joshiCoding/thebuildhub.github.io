@@ -30,16 +30,24 @@
             border:none;
             position:absolute;
             top:50%;
+            transform:translateY(-50%);
             z-index:10;
-            background:#222;
             color:#ddd;
+            background:transparent;
         }
         .carousel_btn-prev{
             left:0;
             
         }
+        .carousel_btn-next::after,
         .carousel_btn-prev::after{
             content:'\203a';
+            font-size:40px;
+            transform:scale(1.5);
+
+        }
+        .carousel_btn-prev::after{
+            content : '\2039';
         }
         .carousel_btn-next{
             right:0;
@@ -52,12 +60,12 @@
        
         
         <div class="carousel_slide">
-            <img src="img/img-nature1.jpg" alt="">
-            <img src="img/img-nature2.jpg" alt=""> 
-            <img src="img/img-nature3.jpg" alt=""> 
-            <img src="img/img-nature4.jpg" alt="">
+            <img src="/components/img/img-nature1.jpg" alt="">
+            <img src="/components/img/img-nature2.jpg" alt=""> 
+            <img src="/components/img/img-nature3.jpg" alt=""> 
+            <img src="/components/img/img-nature4.jpg" alt="">
         </div>
-        <button class="carousel_btn-next">Next</button>
+        <button class="carousel_btn-next"></button>
        
     </div>
   
