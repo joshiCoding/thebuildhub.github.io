@@ -8,12 +8,15 @@
 <body>
     <h1>The state-wise data</h1>
     <h2>using fetch api</h2>
-    <ul class="data"></ul>
+    <ul class="data">
+        <div class="loading">
+            loading data
+        </div>
+    </ul>
 
     <script>
         const container = document.querySelector('.data');
-        console.log("i am here")
-
+        const loading = document.querySelector('.loading');
         function fetchData(){
             fetch('https://api.covid19india.org/data.json')
             .then( res => res.json())
@@ -26,6 +29,7 @@
                         <li>State : ${state.state} ; Active : ${state.active}; Confirmed : ${state.confirmed} </li>
                     `;
                 });
+                loading.style.display = "none";
                 container.innerHTML = output;
             })
         }
