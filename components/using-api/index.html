@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting data of covid-19 </title>
+</head>
+<body>
+    <h1>The state-wise data</h1>
+    <h2>using fetch api</h2>
+    <ul class="data"></ul>
+
+    <script>
+        const container = document.querySelector('.data');
+        console.log("i am here")
+
+        function fetchData(){
+            fetch('https://api.covid19india.org/data.json')
+            .then( res => res.json())
+            .then( data => {
+                let output = "";
+                
+                data.statewise.forEach (state => {
+                   
+                    output += `
+                        <li>State : ${state.state} ; Active : ${state.active}; Confirmed : ${state.confirmed} </li>
+                    `;
+                });
+                container.innerHTML = output;
+            })
+        }
+        fetchData();
+    </script>
+</body>
+</html>
